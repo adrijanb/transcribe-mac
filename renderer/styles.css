@@ -1,0 +1,145 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  margin: 0;
+  padding: 20px;
+  color: #1d1d1f;
+}
+
+h1 {
+  font-size: 20px;
+  margin: 0 0 12px;
+}
+
+.banner {
+  background: #fde8e8;
+  border: 1px solid #f5b5b5;
+  color: #9b1c1c;
+  padding: 10px 14px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  font-size: 13px;
+}
+
+.banner.hidden {
+  display: none;
+}
+
+.dropzone {
+  border: 2px dashed #b0b0b5;
+  border-radius: 10px;
+  padding: 30px;
+  text-align: center;
+  color: #666;
+  cursor: pointer;
+  margin-bottom: 16px;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.dropzone.dragover {
+  background: #eef4ff;
+  border-color: #4a90e2;
+}
+
+.controls-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+  font-size: 13px;
+}
+
+#output-folder-path {
+  color: #666;
+  font-size: 12px;
+}
+
+.queue-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 16px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.queue-list:empty {
+  display: none;
+}
+
+.queue-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  border-bottom: 1px solid #eee;
+  font-size: 13px;
+}
+
+.queue-item:last-child {
+  border-bottom: none;
+}
+
+.queue-item .filename {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.status-badge {
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.status-badge.queued {
+  background: #eee;
+  color: #555;
+}
+
+.status-badge.processing {
+  background: #fff4cc;
+  color: #8a6d00;
+}
+
+.status-badge.done {
+  background: #d9f2df;
+  color: #1a7a34;
+}
+
+.status-badge.error {
+  background: #fde0e0;
+  color: #9b1c1c;
+}
+
+.queue-item .error-message {
+  color: #9b1c1c;
+  font-size: 11px;
+  max-width: 220px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.queue-item button {
+  font-size: 11px;
+}
+
+button {
+  padding: 6px 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background: #f5f5f7;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+#progress-text {
+  font-size: 12px;
+  color: #666;
+}

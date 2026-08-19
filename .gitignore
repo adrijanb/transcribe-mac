@@ -1,0 +1,5 @@
+node_modules/
+python/venv/
+python/__pycache__/
+*.srt
+.DS_Store

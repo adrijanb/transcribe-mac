@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <title>transcribe-mac</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>transcribe-mac</h1>
+
+  <div id="env-banner" class="banner hidden"></div>
+
+  <div id="dropzone" class="dropzone">
+    <p>Audio- oder Videodateien hierher ziehen<br />oder klicken zum Auswählen</p>
+  </div>
+
+  <div class="controls-row">
+    <label for="language-select">Sprache:</label>
+    <select id="language-select"></select>
+  </div>
+
+  <div class="controls-row">
+    <label>
+      <input type="radio" name="output-mode" id="output-mode-source" checked />
+      Gleicher Ordner wie Quelle
+    </label>
+    <label>
+      <input type="radio" name="output-mode" id="output-mode-custom" />
+      Ordner wählen…
+    </label>
+    <span id="output-folder-path"></span>
+  </div>
+
+  <ul id="queue-list" class="queue-list"></ul>
+
+  <div class="controls-row">
+    <button id="start-button" disabled>Start</button>
+    <button id="stop-button" disabled>Stopp</button>
+    <span id="progress-text"></span>
+  </div>
+
+  <script src="languages.js"></script>
+  <script src="renderer.js"></script>
+</body>
+</html>

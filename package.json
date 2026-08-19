@@ -1,0 +1,13 @@
+{
+  "name": "transcribe-mac",
+  "version": "0.1.0",
+  "description": "Lokale macOS App zum Batch-Transkribieren von Audio- und Videodateien mit Zeitstempeln (Whisper + MLX GPU-Beschleunigung)",
+  "main": "electron/main.js",
+  "private": true,
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^32.0.0"
+  }
+}
